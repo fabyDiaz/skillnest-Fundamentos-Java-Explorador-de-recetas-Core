@@ -1,0 +1,32 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+     <div class="nav">
+            <a href="#">Lista de recetas</a>
+        </div>
+        <div class="content">
+	        <div class="titulo">
+	            <h1>${nombre}</h1>
+	        </div>
+	        <div class="ContenedorRecetas">
+	            <ul class="listaRecetas">
+		            <c:forEach var="ingrediente" items="${listaIngredientes}">
+			            <li>
+			                <p class="itemReceta" href="/detalle/${receta}">${detalle}</p>
+			            </li>
+		            </c:forEach>
+	            </ul>
+	        </div>
+        </div>
+</body>
+</html>

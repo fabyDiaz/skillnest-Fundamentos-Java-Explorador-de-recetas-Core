@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #FFB6D9;
+    min-height: 100vh;
+}
+
+/* Navegación */
+.nav {
+    background-color: #FFF8E1;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+    color: #FF6B9D;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #FFE0EC;
+}
+
+/* Contenido principal */
+.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo {
+    background-color: #FFF8E1;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.titulo h1 {
+    color: #FFC107;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de recetas */
+.ContenedorRecetas {
+    background-color: #FFF8E1;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.listaRecetas {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.listaRecetas li {
+    background: linear-gradient(135deg, #B5D4FF 0%, #E1ECFF 100%);
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.listaRecetas li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.itemReceta {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
